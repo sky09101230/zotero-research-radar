@@ -3,9 +3,9 @@ requires = ["uv_build>=0.8.5,<0.9.0"]
 build-backend = "uv_build"
 
 [project]
-name = "zotero-arxiv-daily"
+name = "zotero-research-radar"
 version = "1.0.0"
-description = "Add your description here"
+description = "Local-first, Zotero-based literature recommendation and reporting workflow"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -27,6 +27,12 @@ dependencies = [
     "peft>=0.18.1",
     "trafilatura>=2.0.0",
 ]
+
+[project.scripts]
+radar = "zotero_arxiv_daily.radar_cli:main"
+
+[tool.uv.build-backend]
+module-name = "zotero_arxiv_daily"
 
 [tool.uv.sources]
 torch = { index = "pytorch" }

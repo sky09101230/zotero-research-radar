@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zotero Research Radar"
+  short_description: "基于 Zotero 的本地个性化文献推荐、去重和结构化报告工作流"
+  default_prompt: "Use $zotero-research-radar to generate a personalized literature report from my Zotero library."

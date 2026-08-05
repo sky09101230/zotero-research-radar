@@ -10,10 +10,14 @@ wheels/
 
 # Virtual environments
 .venv
+.pytest_cache/
+.pytest-*
 test.ipynb
 
 logs
 models
 test-compose.yml
 outputs
+reports
+.radar
 config/private.yaml
